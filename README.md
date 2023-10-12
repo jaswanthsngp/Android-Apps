@@ -17,5 +17,3 @@ Android Apps built as a part of [Google's Courses](https://developer.android.com
 | 10 | Course Topics | Lazy Grid <br> Grid Items from Array |
 | 11 | Woof | Material Theming <br> Dark and Light Themes <br> Animation <br> Accessiblity |
 | 12 | Super Heroes | Material Theming <br> Dark and Light Themes |
-
-- Little Lemon is done as a part of a CouseEra Course
