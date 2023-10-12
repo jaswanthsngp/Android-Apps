@@ -18,3 +18,4 @@ Android Apps built as a part of [Google's Courses](https://developer.android.com
 | 11 | Woof | Material Theming <br> Dark and Light Themes <br> Animation <br> Accessiblity |
 | 12 | Super Heroes | Material Theming <br> Dark and Light Themes |
 | 13 | Dessert Clicker | Activity Lifecycle <br> rememberSavable <br> Logging using LogCat |
+| 14 | Unscramble | App Architecture <br> Unidirectional Data Flow <br> Test Types (Paths) <br> Test Coverage |
