@@ -13,11 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.cupcake.test
-
-import androidx.navigation.NavController
-import org.junit.Assert
-
-fun NavController.assertCurrentRouteName(expectedRouteName: String) {
-    Assert.assertEquals(expectedRouteName, currentBackStackEntry?.destination?.route)
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id("com.android.application") version "8.1.0" apply false
+    id("com.android.library") version "8.1.0" apply false
+    id("org.jetbrains.kotlin.android") version "1.9.0" apply false
 }

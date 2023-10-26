@@ -13,11 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.cupcake.test
+package com.example.lunchtray.model
 
-import androidx.navigation.NavController
-import org.junit.Assert
-
-fun NavController.assertCurrentRouteName(expectedRouteName: String) {
-    Assert.assertEquals(expectedRouteName, currentBackStackEntry?.destination?.route)
-}
+data class OrderUiState(
+    // Entree Selection
+    val entree: MenuItem.EntreeItem? = null,
+    val sideDish: MenuItem.SideDishItem? = null,
+    val accompaniment: MenuItem.AccompanimentItem? = null,
+    val itemTotalPrice: Double = 0.0,
+    val orderTax: Double = 0.0,
+    val orderTotalPrice: Double = 0.0
+)

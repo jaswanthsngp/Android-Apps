@@ -13,11 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.cupcake.test
-
-import androidx.navigation.NavController
-import org.junit.Assert
-
-fun NavController.assertCurrentRouteName(expectedRouteName: String) {
-    Assert.assertEquals(expectedRouteName, currentBackStackEntry?.destination?.route)
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
 }
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Lunch Tray"
+include(":app")

@@ -13,11 +13,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.cupcake.test
+package com.example.cupcake
 
-import androidx.navigation.NavController
-import org.junit.Assert
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.core.view.WindowCompat
+import com.example.cupcake.ui.theme.CupcakeTheme
 
-fun NavController.assertCurrentRouteName(expectedRouteName: String) {
-    Assert.assertEquals(expectedRouteName, currentBackStackEntry?.destination?.route)
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        setContent {
+            CupcakeTheme {
+                CupcakeApp()
+            }
+        }
+    }
 }
