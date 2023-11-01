@@ -21,3 +21,4 @@ Android Apps built as a part of [Google's Courses](https://developer.android.com
 | 14 | Unscramble | App Architecture <br> Unidirectional Data Flow <br> Test Types (Paths) <br> Test Coverage |
 | 15 | Cupcake | App Navigation <br> NavHost, NavController, NavGraph <br> Navigating using System Methods |
 | 16 | Lunch Tray | App Navigation Practice |
+| 17 | Reply | Adaptive Layout |
