@@ -13,7 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@file:OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
+@file:OptIn(ExperimentalMaterial3WindowSizeClassApi::class,
+    ExperimentalMaterial3WindowSizeClassApi::class
+)
 
 package com.example.reply
 
@@ -58,3 +60,25 @@ fun ReplyAppCompactPreview() {
         }
     }
 }
+
+@Preview(showBackground = true, widthDp = 700)
+@Composable
+fun ReplyAppMediumPreview() {
+    ReplyTheme {
+        Surface {
+            ReplyApp(windowSize = WindowWidthSizeClass.Medium)
+        }
+    }
+}
+
+@Preview(showBackground = true, widthDp = 1000)
+@Composable
+fun ReplyAppExpandedPreview() {
+    ReplyTheme {
+        Surface {
+            ReplyApp(windowSize = WindowWidthSizeClass.Medium)
+        }
+    }
+}
+
+
